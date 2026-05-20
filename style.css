@@ -1,0 +1,526 @@
+/* =========================
+FILE: style.css
+========================= */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Inter', sans-serif;
+  background:#F5F1EB;
+  color:#141223;
+  overflow-x:hidden;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:30px 8%;
+}
+
+.logo{
+  font-size:42px;
+  font-family:'DM Serif Display', serif;
+}
+
+.logo span{
+  color:#57C7FF;
+}
+
+.nav-links{
+  display:flex;
+  list-style:none;
+  gap:30px;
+}
+
+.nav-links a{
+  text-decoration:none;
+  color:#141223;
+  font-weight:500;
+}
+
+.join-btn{
+  padding:14px 24px;
+  border:none;
+  border-radius:50px;
+  background:#F5A26F;
+  color:#141223;
+  font-weight:600;
+  cursor:pointer;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+  min-height:90vh;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:50px 8%;
+  gap:80px;
+}
+
+.hero-left{
+  position:relative;
+  flex:1;
+}
+
+.circle-bg{
+  width:450px;
+  height:450px;
+  background:#F3D36B;
+  border-radius:50%;
+  position:absolute;
+  top:30px;
+  left:30px;
+}
+
+.hero-img{
+  width:420px;
+  border-radius:40px;
+  padding-left: 2rem;
+  position:relative;
+  z-index:2;
+}
+
+.scribble{
+  position:absolute;
+  border:8px solid #57C7FF;
+  border-radius:50%;
+}
+
+.scribble-1{
+  width:120px;
+  height:120px;
+  right:40px;
+  top:20px;
+}
+
+.scribble-2{
+  width:80px;
+  height:80px;
+  bottom:30px;
+  left:0;
+}
+
+.hero-right{
+  flex:1;
+}
+
+.hero-right h1{
+  font-size:85px;
+  line-height:1;
+  font-family:'DM Serif Display', serif;
+  margin-bottom:30px;
+}
+
+.hero-right p{
+  font-size:22px;
+  line-height:1.7;
+  max-width:600px;
+  margin-bottom:35px;
+}
+
+.hero-buttons{
+  display:flex;
+  gap:20px;
+}
+
+.primary-btn{
+  padding:16px 30px;
+  border:none;
+  border-radius:50px;
+  background:#57C7FF;
+  color:#141223;
+  font-weight:700;
+  cursor:pointer;
+  font-size:16px;
+}
+
+.secondary-btn{
+  padding:16px 30px;
+  border:none;
+  border-radius:50px;
+  background:#EFEAE3;
+  font-weight:700;
+  cursor:pointer;
+}
+
+/* ================= SECTION ================= */
+
+.section-title{
+  text-align:center;
+  max-width:800px;
+  margin:auto;
+  margin-bottom:70px;
+}
+
+.section-title h2{
+  font-size:70px;
+  font-family:'DM Serif Display', serif;
+  margin-bottom:20px;
+}
+
+.section-title p{
+  font-size:20px;
+  line-height:1.7;
+}
+
+/* ================= ABOUT ================= */
+
+.about{
+  padding:120px 8%;
+}
+
+.about-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:30px;
+}
+
+.about-card{
+  background:#EFEAE3;
+  padding:40px;
+  border-radius:35px;
+  transition:0.3s;
+}
+
+.about-card:hover{
+  transform:translateY(-10px);
+}
+
+.about-card span{
+  font-size:45px;
+}
+
+.about-card h3{
+  font-size:30px;
+  margin:20px 0;
+  font-family:'DM Serif Display', serif;
+}
+
+.about-card p{
+  line-height:1.8;
+}
+
+/* ================= TIMELINE ================= */
+
+.timeline-section{
+  padding:100px 8%;
+}
+
+.timeline{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:20px;
+}
+
+.timeline-card{
+  background:#141223;
+  color:white;
+  padding:40px 20px;
+  border-radius:30px;
+  text-align:center;
+}
+
+.timeline-card h3{
+  font-size:32px;
+  margin-bottom:15px;
+  font-family:'DM Serif Display', serif;
+}
+
+/* ================= HELP ================= */
+
+.help{
+  padding:120px 8%;
+}
+
+.help-title h2{
+  font-size:90px;
+  font-family:'DM Serif Display', serif;
+  margin-bottom:60px;
+}
+
+.help-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:40px;
+}
+
+.help-card{
+  padding:50px;
+  border-radius:40px;
+  transition:0.3s;
+}
+
+.help-card:hover{
+  transform:translateY(-10px);
+}
+
+.orange{
+  background:#F5A26F;
+}
+
+.beige{
+  background:#EFEAE3;
+}
+
+.blue{
+  background:#CBEFFF;
+}
+
+.green{
+  background:#D8E8D9;
+}
+
+.emoji{
+  font-size:55px;
+}
+
+.help-card h3{
+  font-size:48px;
+  margin:30px 0;
+  font-family:'DM Serif Display', serif;
+}
+
+.help-card p{
+  line-height:1.8;
+  font-size:18px;
+  margin-bottom:35px;
+}
+
+.help-card a{
+  text-decoration:none;
+  color:#141223;
+  font-weight:700;
+}
+
+/* ================= FOOTER ================= */
+
+.footer{
+  padding:120px 8%;
+  text-align:center;
+}
+
+.footer h2{
+  font-size:70px;
+  font-family:'DM Serif Display', serif;
+  margin-bottom:20px;
+}
+
+.footer p{
+  font-size:22px;
+  margin-bottom:30px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:1100px){
+
+  .hero{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .hero-right h1{
+    font-size:65px;
+  }
+
+  .about-grid{
+    grid-template-columns:1fr;
+  }
+
+  .timeline{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .help-grid{
+    grid-template-columns:1fr;
+  }
+
+}
+
+@media(max-width:768px){
+
+  .navbar{
+    flex-direction:column;
+    gap:25px;
+  }
+
+  .nav-links{
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+
+  .hero-img{
+    width:100%;
+  }
+
+  .circle-bg{
+    width:300px;
+    height:300px;
+  }
+
+  .hero-right h1{
+    font-size:50px;
+  }
+
+  .section-title h2{
+    font-size:45px;
+  }
+
+  .help-title h2{
+    font-size:55px;
+  }
+
+  .timeline{
+    grid-template-columns:1fr;
+  }
+
+}
+
+
+/* =========================================
+ADD THIS BELOW YOUR EXISTING CSS
+========================================= */
+
+/* ================= ENTRIES PAGE ================= */
+
+.entries-hero,
+.medical-hero{
+  padding:120px 8% 60px;
+  text-align:center;
+}
+
+.entries-hero h1,
+.medical-hero h1{
+  font-size:80px;
+  font-family:'DM Serif Display', serif;
+  margin-bottom:20px;
+}
+
+.entries-hero p,
+.medical-hero p{
+  font-size:22px;
+}
+
+.entries-grid,
+.medical-grid{
+  padding:40px 8% 120px;
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:40px;
+}
+
+.entry-card,
+.medical-card{
+  background:#EFEAE3;
+  padding:50px;
+  border-radius:40px;
+  transition:0.3s;
+}
+
+.entry-card:hover,
+.medical-card:hover{
+  transform:translateY(-10px);
+}
+
+.entry-icon,
+.medical-icon{
+  font-size:60px;
+}
+
+.entry-card h2,
+.medical-card h2{
+  font-size:50px;
+  font-family:'DM Serif Display', serif;
+  margin:25px 0;
+}
+
+.entry-card p,
+.medical-card p{
+  line-height:1.8;
+  margin-bottom:25px;
+}
+
+.entry-card ul{
+  margin-bottom:30px;
+  padding-left:20px;
+}
+
+.entry-card li{
+  margin-bottom:10px;
+}
+
+.entry-card button{
+  padding:14px 28px;
+  border:none;
+  border-radius:50px;
+  background:#141223;
+  color:white;
+  cursor:pointer;
+  font-weight:600;
+}
+
+.blue-card{
+  background:#DDF4FF;
+}
+
+.green-card{
+  background:#DCE9D8;
+}
+
+.orange-card{
+  background:#FFD7BF;
+}
+
+/* ================= CHECKLIST ================= */
+
+.checklist-section{
+  padding:0 8% 120px;
+}
+
+.checklist-section h2{
+  text-align:center;
+  font-size:65px;
+  margin-bottom:60px;
+  font-family:'DM Serif Display', serif;
+}
+
+.checklist-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:30px;
+}
+
+.check-item{
+  background:#EFEAE3;
+  padding:30px;
+  border-radius:25px;
+  font-size:20px;
+  font-weight:600;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:900px){
+
+  .entries-grid,
+  .medical-grid,
+  .checklist-grid{
+    grid-template-columns:1fr;
+  }
+
+  .entries-hero h1,
+  .medical-hero h1{
+    font-size:55px;
+  }
+
+}
