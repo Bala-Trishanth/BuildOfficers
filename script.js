@@ -65,6 +65,7 @@ if(redirectLink){
                 const btn = document.createElement("button");
 
                 btn.innerText = "Download Now";
+                btn.classList.add('active');
 
                 btn.onclick = () => {
                     window.location.href = redirectLink;
